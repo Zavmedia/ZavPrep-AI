@@ -4,7 +4,7 @@
   "description": "ZenPrep AI - ZAV INFO TECH Exam Supporter",
   "private": true,
   "engines": {
-    "node": "18.x"
+    "node": "24.x"
   },
   "dependencies": {
     "node-fetch": "^3.3.2"

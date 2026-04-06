@@ -1,0 +1,15 @@
+# Firebase credentials - NEVER commit this
+zavprep-firebase-adminsdk-*.json
+*.json.bak
+
+# Node
+node_modules/
+.env
+.env.local
+
+# Vercel
+.vercel/
+
+# Temp
+tmp_repo/
+*.log

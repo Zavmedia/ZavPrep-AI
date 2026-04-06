@@ -1,0 +1,15 @@
+{
+  "name": "zenprep-ai",
+  "version": "1.0.0",
+  "description": "ZenPrep AI - ZAV INFO TECH Exam Supporter",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "scripts": {
+    "dev": "vercel dev"
+  }
+}

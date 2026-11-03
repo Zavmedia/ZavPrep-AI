@@ -11,7 +11,7 @@ function getAllowedCodes() {
 }
 
 function getAppPassword() {
-  return String(process.env.APP_PASSWORD || "Success@hardwork%").trim();
+  return String(process.env.APP_PASSWORD || "******").trim();
 }
 
 function getCode(req) {

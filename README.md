@@ -1,263 +1,230 @@
-# ZenPrep AI - ZAV INFO TECH Exam Supporter
+# ZenPrep AI
+### AI-Powered Exam Preparation Platform
+**A ZAV INFO TECH Product | ZAVAN GROUP**
 
-A production-ready exam preparation web app with AI-powered features, mock tests, and progress tracking.
+ZenPrep AI is an AI-powered exam preparation platform designed to make competitive exam learning more accessible, personalised and effective.
 
----
+Combining AI-powered tutoring, structured study materials, mock examinations and performance analytics, ZenPrep AI helps students prepare for multiple competitive examinations through a unified learning experience.
 
-## Features
+**Product Showcase:** [View ZenPrep AI on LinkedIn](https://lnkd.in/p/eVJSeQHQ)
 
-- **Multi-Exam Selection** - Prepare for up to 3 exams simultaneously
-- **AI-Powered Learning** - Claude Sonnet + Gemma 3 for intelligent tutoring
-- **Mock Tests** - Timed practice with section navigation and review
-- **Progress Tracking** - localStorage + Firebase cloud backup
-- **Student Portal** - Re-login preserves your data
-- **Teach Me** - Comprehensive study material for all topics
-- **Ask Doubt** - AI tutor answers your questions
-- **Malayalam Support** - Full Malayalam medium for Kerala PSC exams
-- **Admin Panel** - Analytics dashboard for monitoring
+**GitHub Repository:** [ZavPrep-AI](https://github.com/Zavmedia/ZavPrep-AI)
 
 ---
 
-## Supported Exams
+## 1. Product Vision
 
-| Category | Exams |
-|----------|-------|
-| SSC/Defence | SSC GD Constable |
+Our vision is to build a scalable AI-driven learning ecosystem that supports students preparing for competitive examinations.
+
+Rather than relying exclusively on static learning materials, ZenPrep AI combines interactive assessments, AI tutoring and progress tracking to create a more personalised preparation experience.
+
+Our long-term direction includes:
+- Personalised AI learning experiences.
+- Multilingual education support.
+- Adaptive examination preparation.
+- Student performance intelligence.
+- Expansion into additional competitive examinations and educational segments.
+
+## 2. Key Features
+
+### Multi-Exam Preparation
+- Supports preparation for multiple examinations.
+- Students can select up to three exams simultaneously.
+- Dedicated exam-specific question banks and learning content.
+
+### AI-Powered Learning
+- AI-powered tutoring and doubt resolution.
+- Claude Sonnet and Gemma 3 model integration.
+- Context-aware learning assistance.
+- Malayalam-supported learning experiences.
+
+### Mock Examination System
+- Timed mock examinations.
+- Section-based navigation.
+- Question review and answer validation.
+- Instant performance feedback.
+- Exam-specific marking schemes.
+
+### Teach Me
+- Structured study materials.
+- Topic-based learning.
+- AI-assisted explanations.
+- Learning support for different examination categories.
+
+### Ask Doubt
+- Interactive AI tutoring.
+- Subject-related doubt clarification.
+- Simplified explanations.
+- Malayalam language support.
+
+### Student Dashboard
+- Personalised student portal.
+- Learning progress monitoring.
+- Performance tracking.
+- Examination preparation overview.
+- Persistent student data with cloud backup.
+
+### Admin Analytics
+- Student activity monitoring.
+- Total student analytics.
+- Daily active user reporting.
+- Examination distribution.
+- Recent student activity.
+
+*Administrative features are available only to authorised administrators.*
+
+## 3. Supported Examinations
+
+| Category | Examinations |
+|---|---|
+| SSC / Defence | SSC GD Constable |
 | Banking | SBI PO Prelims |
 | Civil Services | UPSC CSE Prelims |
-| Kerala PSC (English) | LDC, LGS, VEO, HSA English, Degree Level, SI Police, General |
-| AFCAT | Indian Air Force |
+| Kerala PSC | LDC, LGS, VEO, HSA English, Degree Level, SI Police, General |
+| Air Force | AFCAT |
 
----
+The platform is designed to support further examination categories as the product evolves.
 
-## Credentials
+## 4. Technology Stack
 
-| Type | Value |
-|------|-------|
-| **Access Code** | `Dream_100%` |
-| **Password** | `Success@hardwork%` |
-| **Admin Code** | `zavan_admin_2026` |
-| **Admin URL** | `https://your-app.vercel.app?admin=zavan_admin_2026` |
+| Layer | Technology |
+|---|---|
+| Frontend | HTML5, CSS3, Vanilla JavaScript |
+| Backend | Node.js |
+| Hosting | Vercel |
+| Database | Firebase Firestore |
+| AI Integration | Anthropic Claude, Google Gemma 3 via OpenRouter |
+| Authentication | Custom server-side access control |
+| API Architecture | Vercel Serverless Functions |
 
----
+## 5. Architecture
 
-## Project Structure
-
-```
-zenprep-ai/
-├── index.html          # Main HTML with embedded CSS
-├── app-core.js         # Core logic, state, presets, question bank
-├── app-ui.js           # UI rendering, event handlers
-├── package.json        # Dependencies
-├── vercel.json         # Vercel configuration
-└── api/
-    ├── auth.js         # Access control + password verification
-    ├── profile.js      # Student profile storage
-    ├── chat.js         # AI proxy (OpenRouter + Anthropic)
-    ├── admin.js        # Analytics dashboard API
-    ├── _memory.js      # Storage utilities
-    └── _firebase.js    # Firebase Firestore REST helper
-```
-
----
-
-## Deployment
-
-### Option 1: Vercel (Recommended)
-
-#### Step 1: Push to GitHub
-
-```bash
-git init
-git add .
-git commit -m "ZenPrep AI v1.0"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/zenprep-ai.git
-git push -u origin main
+```text
+ZenPrep AI
+│
+├── Frontend
+│   ├── index.html
+│   ├── app-core.js
+│   └── app-ui.js
+│
+├── Backend API
+│   └── api/
+│       ├── auth.js
+│       ├── profile.js
+│       ├── chat.js
+│       ├── admin.js
+│       ├── _memory.js
+│       └── _firebase.js
+│
+├── Configuration
+│   ├── package.json
+│   └── vercel.json
+│
+└── Documentation
+    └── README.md
 ```
 
-#### Step 2: Connect to Vercel
+## 6. Student Learning Workflow
 
-1. Go to [vercel.com](https://vercel.com)
-2. Click **New Project**
-3. Import your GitHub repository
-4. Add Environment Variables:
+1. Student accesses the platform using authorised credentials.
+2. Selects up to three examination categories.
+3. Creates or accesses their student profile.
+4. Enters the learning dashboard.
+5. Practises examination-specific MCQs.
+6. Uses AI tutoring to understand difficult topics.
+7. Takes timed mock examinations.
+8. Reviews performance and tracks progress.
 
-| Name | Value |
-|------|-------|
-| `APP_ACCESS_CODES` | `Dream_100%` |
-| `APP_PASSWORD` | `Success@hardwork%` |
-| `ADMIN_CODE` | `zavan_admin_2026` |
-| `FIREBASE_PROJECT_ID` | `zavprep` |
-| `FIREBASE_CLIENT_EMAIL` | `firebase-adminsdk-fbsvc@zavprep.iam.gserviceaccount.com` |
-| `FIREBASE_PRIVATE_KEY` | *(paste full private key)* |
-| `OPENROUTER_API_KEY` | `sk-or-v1-...` |
-| `ANTHROPIC_API_KEY` | `sk-ant-api03-...` |
-| `APP_BASE_URL` | `https://your-app.vercel.app` |
-| `APP_RATE_LIMIT_PER_HOUR` | `80` |
+## 7. Security and Data Management
 
-5. Click **Deploy**
+ZenPrep AI incorporates security and data management mechanisms, including:
 
-#### Step 3: Verify Deployment
+- Access-code and password-based authentication.
+- Server-side authorisation.
+- API request rate limiting.
+- Input validation and sanitisation.
+- Environment-based secret management.
+- Firebase-backed cloud persistence.
+- Student and administrative access separation.
 
-```bash
-# Test main app
-curl https://your-app.vercel.app
+Sensitive credentials, API keys and private configuration values are intentionally excluded from this repository documentation.
 
-# Test auth API
-curl -X POST https://your-app.vercel.app/api/auth \
-  -H "Content-Type: application/json" \
-  -d '{"code":"Dream_100%","password":"Success@hardwork%"}'
-# Expected: {"ok":true,"required":true}
+## 8. Deployment
 
-# Test admin API
-curl "https://your-app.vercel.app/api/admin?code=zavan_admin_2026"
-# Expected: JSON analytics data
-```
+ZenPrep AI is designed for deployment using Vercel.
 
----
+Production deployment requires the appropriate environment variables and service configurations.
 
-### Option 2: Local Development
+Required configuration categories include:
 
-```bash
-# Install dependencies
-npm install
+- Application authentication settings.
+- Administrative authentication settings.
+- Firebase service credentials.
+- AI provider API credentials.
+- Application URL and rate-limiting configuration.
 
-# Start dev server
-npm run dev
+**Important:** Production credentials must be configured securely through the deployment provider. Never commit private keys, passwords or API tokens to GitHub.
 
-# Open http://localhost:3000
-```
+## 9. Product Development Roadmap
 
----
+| Phase | Development Direction |
+|---|---|
+| Phase 1 | Core exam preparation platform |
+| Phase 2 | Enhanced AI tutoring and personalised learning |
+| Phase 3 | Expanded examination coverage |
+| Phase 4 | Advanced student analytics and adaptive assessments |
+| Phase 5 | Institutional and enterprise learning solutions |
+| Phase 6 | Scalable multilingual AI learning ecosystem |
 
-## User Workflow
+Roadmap items represent development directions, not claims that these features are already available.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ 1. OPEN APP                                            │
-│    ↓                                                   │
-│ 2. ENTER ACCESS CREDENTIALS                            │
-│    Access Code: Dream_100%                             │
-│    Password: Success@hardwork%                          │
-│    ↓                                                   │
-│ 3. SELECT EXAMS (up to 3)                             │
-│    ↓                                                   │
-│ 4. ENTER NAME & CONFIRM                                │
-│    ↓                                                   │
-│ 5. DASHBOARD                                          │
-│    ┌──────────────────────────────────────┐           │
-│    │ Overview | Practice | Teach | Doubt  │           │
-│    │ Progress | Mock Test                 │           │
-│    └──────────────────────────────────────┘           │
-│    ↓                                                   │
-│ 6. START LEARNING                                     │
-│    • Practice MCQs with instant feedback              │
-│    • Get AI Teaching with Malayalam support           │
-│    • Ask Doubts to AI tutor                           │
-│    • Track Progress                                    │
-│    • Take Timed Mock Tests                             │
-└─────────────────────────────────────────────────────────┘
-```
+## 10. Business and Commercial Opportunities
 
----
+ZenPrep AI has potential applications across:
 
-## Admin Workflow
+- Individual competitive examination preparation.
+- Educational institutions.
+- Coaching centres.
+- Government examination training programmes.
+- Skill development organisations.
+- Institutional learning and assessment systems.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ 1. OPEN ADMIN URL                                       │
-│    https://your-app.vercel.app?admin=zavan_admin_2026  │
-│    ↓                                                   │
-│ 2. VIEW ANALYTICS                                      │
-│    • Total Students                                    │
-│    • Daily Active Users (14-day chart)                │
-│    • Exam Distribution                                 │
-│    • Recent Student Activity                          │
-└─────────────────────────────────────────────────────────┘
-```
+Potential commercial models include individual subscriptions, institutional licensing and customised enterprise deployments.
+
+## 11. Product Access
+
+ZenPrep AI currently operates with controlled access.
+
+The live application is not publicly accessible for unrestricted demonstrations. Product walkthroughs and authorised testing access can be arranged upon request.
+
+For a product overview, visit:
+
+[ZenPrep AI - LinkedIn Project Showcase](https://lnkd.in/p/eVJSeQHQ)
+
+## 12. Intellectual Property and Licence
+
+**Copyright © 2026 ZAV INFO TECH / ZAVAN GROUP. All Rights Reserved.**
+
+ZenPrep AI is proprietary software.
+
+The source code, original architecture, documentation, original design assets and associated intellectual property are owned by their respective rights holders.
+
+No licence is granted to reproduce, modify, redistribute, sublicense or commercially exploit this software merely by accessing this repository.
+
+Commercial use and redistribution require prior written authorisation from the applicable copyright owner.
+
+Third-party libraries, AI models and services remain subject to their respective licences and terms.
+
+For licensing, partnerships, institutional deployments or commercial enquiries, contact ZAV INFO TECH.
 
 ---
 
-## Exam Features
+## Built by ZAV INFO TECH
 
-### SSC GD
-- 80 questions, 160 marks, 60 minutes
-- Sections: Reasoning, GK, Mathematics, English
-- Negative marking: -0.5 per wrong answer
+**Building intelligent technology solutions for real-world problems.**
 
-### UPSC CSE
-- 100 questions, 200 marks, 2 hours
-- Sections: History & Polity, Geography & Environment, Economy & Current Affairs
-- Negative marking: -0.66 per wrong answer
+AI | Software Development | Automation | Digital Solutions
 
-### Kerala PSC
-- 100 questions, 100 marks, 75 minutes
-- Malayalam medium available (LDC, LGS, VEO)
-- Negative marking: -0.33 per wrong answer
-
-### SBI PO
-- 100 questions, 100 marks, 60 minutes
-- Section-locked navigation
-- Negative marking: -0.25 per wrong answer
-
-### AFCAT
-- 100 questions, 300 marks, 2 hours
-- 4 sections with +3/-1 marking scheme
-
----
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| AI not responding | Check `OPENROUTER_API_KEY` in environment variables |
-| Progress not saving | Verify Firebase configuration in env |
-| 401 errors | Ensure access codes match environment variables |
-| Malayalam questions missing | Select Malayalam medium exam (LDC, LGS, VEO) |
-
----
-
-## Technology Stack
-
-- **Frontend**: Vanilla JavaScript, HTML5, CSS3
-- **Backend**: Node.js API routes (Vercel Serverless)
-- **Database**: Firebase Firestore + Memory fallback
-- **AI**: Claude Sonnet 4 (Anthropic) + Gemma 3 27B (OpenRouter)
-- **Hosting**: Vercel
-
----
-
-## File Sizes
-
-| File | Size | Lines |
-|------|------|-------|
-| app-core.js | 55 KB | 553 |
-| app-ui.js | 34 KB | 665 |
-| index.html | 11 KB | 142 |
-| api/chat.js | 6 KB | 210 |
-| api/_memory.js | 8 KB | 249 |
-| api/_firebase.js | 5 KB | 156 |
-| api/profile.js | 4.5 KB | 129 |
-| api/admin.js | 4 KB | 139 |
-| api/auth.js | 2.4 KB | 87 |
-
----
-
-## Security Features
-
-- Access code + password authentication
-- Rate limiting (80 requests/hour per IP)
-- Authorization header validation
-- Input sanitization
-- Firebase authentication via JWT
-
----
-
-## License
-
-Proprietary - ZAV INFO TECH / ZAVAN GROUP
-
----
-
-Built with care for exam preparation excellence.
+**Product:** ZenPrep AI  
+**Organisation:** ZAV INFO TECH  
+**Group:** ZAVAN GROUP
